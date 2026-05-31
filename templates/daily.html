@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baseball Daily - $date</title>
+  <style>$css</style>
+</head>
+<body>
+  <main class="paper">
+    <header class="masthead">
+      <div class="kicker">
+        <span>Local Edition</span>
+        <span>Completed Games Only</span>
+        <span>Generated $generated_on</span>
+      </div>
+      <div class="title-row">
+        <div class="date-box">Sports Page for $date</div>
+        <h1>Baseball Daily</h1>
+        <div class="search-box">Season $season</div>
+      </div>
+    </header>
+
+    <section class="edition-note">
+      <span>Traditional MLB lines, box scores, standings, and season leaders.</span>
+      <span class="edition-links">$edition_links</span>
+    </section>
+
+    <section class="standings">
+      <h2>Standings</h2>
+      <div class="standings-grid">
+        $standings
+      </div>
+    </section>
+
+    <div class="layout">
+      <section class="column center">
+        <h2>Game Summaries</h2>
+        $games
+      </section>
+
+      <aside class="column right leaders">
+        <h2>League Leaders</h2>
+        $leaders_avg
+        $leaders_hr
+        $leaders_era
+        $advanced_hitters
+        $advanced_pitchers
+        $team_performance
+        <div class="briefs">
+          <h3 class="section-title">Notable Yesterday</h3>
+          <div class="brief"><strong>Coming Soon</strong>Automated daily notes will be generated from the completed game box scores.</div>
+        </div>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>

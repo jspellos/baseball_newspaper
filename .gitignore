@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+storage/cache/
+storage/raw/
+storage/*.sqlite
+output/
+*.log
+*.pdf
