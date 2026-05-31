@@ -569,6 +569,28 @@ td {
     columns: 1;
   }
 }
+
+@media print {
+  @page {
+    size: A3 landscape;
+    margin: 9mm;
+  }
+
+  body {
+    background: #fff;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .paper {
+    max-width: none;
+    box-shadow: none;
+  }
+
+  .responsive-panel > summary {
+    pointer-events: none;
+  }
+}
 </style>
 </head>
 <body>
