@@ -538,6 +538,15 @@ td {
     font-size: 13px;
   }
 }
+
+/* Tablet-landscape fix (added 2026-08): keep the Game Summaries box scores from
+   overflowing into the League Leaders column when the center column gets narrow. */
+.center { container-type: inline-size; }
+@container (max-width: 760px) {
+  .box-grid,
+  .notes { grid-template-columns: 1fr; }
+}
+
 </style>
 </head>
 <body>
